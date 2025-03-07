@@ -20,10 +20,10 @@ RUN go mod tidy && go build -o server .
 # Mistake #4: Running the server as root
 # This is a security risk, as the server has full access to the system
 # and can be used to escalate privileges
+USER root
 
 # Mistake #5: Exposing unnecessary ports
 # Exposes SSH and an additional port, which are not needed for the server
 # and can be used to attack the system
 EXPOSE 22 8080
-USER root
 CMD ["./server"]
