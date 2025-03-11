@@ -8,7 +8,9 @@ WORKDIR /app
 # Mistake #2: Using ENV instead of ARG and Hardcoded sensitive information
 # This is a security risk, as ENV variables are stored in the image
 # and can be accessed by anyone with access to the image
-ENV PASSWORD=acompletelyinsecurepassword
+# Fortunately, Docker can detect hardcoded sensitive information
+# and will warn you about it.
+ENV DBPASSWORD=acompletelyinsecurepassword
 ENV DBNAME=postgres
 ENV DBUSER=postgres
 
