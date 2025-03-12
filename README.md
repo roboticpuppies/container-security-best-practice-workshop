@@ -9,3 +9,14 @@ Welcome to this repository. This contains hands-on material for a workshop held 
 - `run/secure` --> Fixed version of running phase.
 
 Due to time constraints, this workshop is limited to building and running containers using Docker, and doesn't cover Kubernetes. We plan to discuss this in another workshop session.
+
+## Final image size comparison
+
+For those who curious, here is the final image sizes between base image flavors
+
+| Image                        | Size   |
+| ---------------------------- | ------ |
+| Insecure                     | 292MB  |
+| Secure + Distroless Non-root | 27MB   |
+| Secure + Alpine              | 14.6MB |
+| Secure + Scratch             | 6.72MB |
