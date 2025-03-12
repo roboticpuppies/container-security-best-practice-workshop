@@ -18,6 +18,7 @@ RUN go mod tidy && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server .
 # since you can't exec into the container and run commands.
 # They also requires more technical knowledge to use.
 # So to balance between security and ease of use, I'll use Alpine here
+# https://medium.com/google-cloud/alpine-distroless-or-scratch-caac35250e0b
 FROM alpine:3.21.3 AS final
 
 # Correction #4: Use ARG instead of ENV to pass build-time variables
