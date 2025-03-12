@@ -1,3 +1,9 @@
+# You can use a .dockerignore file to exclude files or directories from the build context.
+# This helps avoid sending unwanted files and directories to the builder, improving build speed,
+# especially when using a remote builder.
+# The syntax of the .dockerignore file is similar to that of .gitignore files.
+# https://docs.docker.com/build/concepts/context/#dockerignore-files
+
 # Ignore node_modules directory
 node_modules
 
