@@ -10,7 +10,8 @@ Welcome to this repository. This contains hands-on material for a workshop held 
 | `run/insecure`   | Example of bad version when running or deploying a container image. |
 | `run/secure`     | Fixed version of running phase.                                     |
 
-Due to time constraints, this workshop is limited to building and running containers using Docker, and doesn't cover Kubernetes. We plan to discuss this in another workshop session.
+> [!NOTE]
+> Due to time constraints, this workshop is limited to building and running containers using Docker, and doesn't cover Kubernetes. We plan to discuss this in another workshop session.
 
 ## Final image size comparison
 
