@@ -28,7 +28,7 @@ RUN go mod tidy && CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o server .
 # In this example the default user for golang:1.21-alpine is root, which is a bad practice and should be avoided
 # You can check by running the following command:
 # docker run -it --rm golang:1.21-alpine whoami
-# USER root
+USER root
 
 # Mistake #5: Exposing unnecessary ports
 # Exposes SSH and an additional port, which are not needed for the server
